@@ -2,7 +2,7 @@
   "name": "acme-web",
   "version": "1.4.0",
   "private": true,
-  "description": "Status page service for the Acme demo. Dependencies are pinned to 2021 releases on purpose.",
+  "description": "Status page service used to demonstrate Mendr.",
   "license": "MIT",
   "main": "src/index.js",
   "bin": { "acme-status": "src/cli.js" },

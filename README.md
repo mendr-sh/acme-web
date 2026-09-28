@@ -2,9 +2,9 @@
 
 A small status-page service used to demonstrate [Mendr](https://www.mendr.sh).
 
-> **Its dependencies are vulnerable on purpose.** They are pinned to releases
-> from early 2021, so the repository has real, published advisories for Mendr
-> to fix. Do not deploy this code.
+> **This repository started with vulnerable dependencies on purpose.** They
+> were pinned to releases from early 2021, so it had real, published
+> advisories for Mendr to fix. Some can still be open. Do not deploy this code.
 
 ## What it does
 
