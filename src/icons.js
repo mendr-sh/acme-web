@@ -1,14 +1,24 @@
 "use strict";
 
-const SVGO = require("svgo");
+const { optimize } = require("svgo");
 
 // Keeps the viewBox so icons still scale in CSS, and strips editor metadata.
-const svgo = new SVGO({
-  plugins: [{ removeViewBox: false }, { removeDimensions: true }],
-});
+const config = {
+  plugins: [
+    {
+      name: "preset-default",
+      params: {
+        overrides: {
+          removeViewBox: false,
+        },
+      },
+    },
+    "removeDimensions",
+  ],
+};
 
 async function optimizeIcon(svg) {
-  const result = await svgo.optimize(svg);
+  const result = optimize(svg, config);
   return result.data;
 }
 
