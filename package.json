@@ -9,7 +9,7 @@
   "engines": { "node": ">=20" },
   "scripts": {
     "build": "node scripts/build-icons.js",
-    "test": "node --test test/",
+    "test": "node --test",
     "start": "node src/cli.js"
   },
   "dependencies": {
